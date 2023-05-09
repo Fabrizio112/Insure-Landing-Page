@@ -1,5 +1,6 @@
 header {
     @include tamanio(100%, 125vh);
+    min-width: 1000px;
 
     #header-container {
         @include tamanio(100%, 80vh);

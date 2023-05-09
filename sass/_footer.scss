@@ -1,5 +1,6 @@
 footer {
     @include tamanio(100%, 60vh);
+    min-width: 1000px;
     padding: 2rem 8rem;
     @include flex(column, center, center);
 

@@ -1,0 +1,56 @@
+@media screen and (max-width:768px) {
+    nav {
+        padding: 2rem;
+    }
+
+    header {
+        #header-container {
+            padding: 2rem;
+
+            #header-text {
+                h1 {
+                    font-size: 3rem;
+                }
+            }
+
+            #header-img {
+                img {
+                    @include tamanio(50%, 90%);
+                    top: 16rem;
+                    right: -9rem;
+                }
+
+                svg {
+                    left: 6rem;
+                    bottom: 2rem;
+                }
+            }
+        }
+    }
+
+    #different-section {
+        padding: 2rem;
+
+        h2 {
+            font-size: 3rem;
+        }
+    }
+
+    #find-section {
+        padding: 2rem;
+
+        div {
+            div {
+                width: 90%;
+            }
+
+            svg {
+                right: -17rem;
+            }
+        }
+    }
+
+    footer {
+        padding: 2rem;
+    }
+}

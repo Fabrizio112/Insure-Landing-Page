@@ -1,5 +1,6 @@
 #find-section {
     @include tamanio(100%, 80vh);
+    min-width: 1000px;
     padding: 2rem 8rem;
 
     div {
