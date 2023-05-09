@@ -26,11 +26,20 @@ nav {
                     text-decoration: none;
                     color: #000000a1;
                     text-transform: uppercase;
+
+                    &:active {
+                        color: black
+                    }
                 }
             }
 
             #view {
                 @extend .boton;
+
+                &:active {
+                    background-color: black;
+                    color: white;
+                }
             }
         }
     }

@@ -40,6 +40,11 @@ header {
                 @extend .boton;
                 border-color: white;
                 color: white;
+
+                &:active {
+                    background-color: white;
+                    color: #2c2640;
+                }
             }
         }
 

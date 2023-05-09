@@ -23,6 +23,13 @@
                 @extend .boton;
                 border-color: white;
                 color: white;
+                position: relative;
+                z-index: 2;
+
+                &:active {
+                    background-color: white;
+                    color: #2c2640;
+                }
             }
         }
 

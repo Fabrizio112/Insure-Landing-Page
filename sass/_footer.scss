@@ -12,6 +12,14 @@ footer {
         #container-social-media {
             gap: 1rem;
             display: flex;
+
+            svg {
+                cursor: pointer;
+
+                path:active {
+                    fill: black;
+                }
+            }
         }
     }
 
@@ -38,6 +46,10 @@ footer {
                     text-decoration: none;
                     color: black;
                     text-transform: uppercase;
+
+                    &:active {
+                        text-decoration: underline;
+                    }
                 }
             }
         }

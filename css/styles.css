@@ -48,6 +48,14 @@ nav #navbar-right ul li a {
   color: rgba(0, 0, 0, 0.631372549);
   text-transform: uppercase;
 }
+nav #navbar-right ul li a:active {
+  color: black;
+}
+nav #navbar-right ul #view:active {
+  background-color: black;
+  color: white;
+}
+
 header {
   width: 100%;
   height: 125vh;
@@ -95,6 +103,10 @@ header #header-container #header-text p {
 header #header-container #header-text a {
   border-color: white;
   color: white;
+}
+header #header-container #header-text a:active {
+  background-color: white;
+  color: #2c2640;
 }
 header #header-container #header-img {
   width: 50%;
@@ -144,6 +156,12 @@ header #image-left {
 #find-section div div a {
   border-color: white;
   color: white;
+  position: relative;
+  z-index: 2;
+}
+#find-section div div a:active {
+  background-color: white;
+  color: #2c2640;
 }
 #find-section div svg {
   position: absolute;
@@ -220,6 +238,12 @@ footer #container-footer-top #container-social-media {
   gap: 1rem;
   display: flex;
 }
+footer #container-footer-top #container-social-media svg {
+  cursor: pointer;
+}
+footer #container-footer-top #container-social-media svg path:active {
+  fill: black;
+}
 footer #container-footer-bottom {
   width: 100%;
   height: 70%;
@@ -250,6 +274,9 @@ footer #container-footer-bottom ul li a {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
+}
+footer #container-footer-bottom ul li a:active {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 768px) {
