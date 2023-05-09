@@ -1,0 +1,36 @@
+nav {
+    @include flex(row, space-between, center);
+    width: 100%;
+    padding: 2rem 8rem;
+
+    #navbar-left {
+        @include tamanio(50%, 100%);
+
+        #menu {
+            display: none;
+        }
+    }
+
+    #navbar-right {
+        @include tamanio(50%, 100%);
+
+        ul {
+            gap: 3rem;
+            @include flex(row, end, center);
+
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: #000000a1;
+                    text-transform: uppercase;
+                }
+            }
+
+            #view {
+                @extend .boton;
+            }
+        }
+    }
+}

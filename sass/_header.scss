@@ -1,0 +1,64 @@
+header {
+    @include tamanio(100%, 125vh);
+
+    #header-container {
+        @include tamanio(100%, 80vh);
+        @include flex(row, center, center);
+        padding: 2rem 8rem;
+        background-color: #2c2640;
+
+        #header-text {
+            @include tamanio(50%, 100%);
+            @include flex(column, start, start);
+            color: white;
+            gap: 2rem;
+
+            h1 {
+                font-size: 4rem;
+                width: 85%;
+                font-family: $fuente-titulo;
+                font-weight: 400;
+                line-height: 4rem;
+
+                &::before {
+                    content: "";
+                    position: relative;
+                    display: block;
+                    background-color: white;
+                    height: 1px;
+                    width: 30%;
+                    margin: 3rem 0;
+                }
+            }
+
+            p {
+                width: 95%;
+            }
+
+            a {
+                @extend .boton;
+                border-color: white;
+                color: white;
+            }
+        }
+
+        #header-img {
+            @include tamanio(50%, 100%);
+
+            img {
+                position: absolute;
+            }
+
+            svg {
+                position: relative;
+                left: 19rem;
+                bottom: 2rem;
+            }
+        }
+    }
+
+    #image-left {
+        position: absolute;
+        top: 28rem;
+    }
+}

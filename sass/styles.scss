@@ -1,0 +1,29 @@
+@mixin flex($direccion, $justify, $align) {
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin tamanio($a, $b) {
+    width: $a;
+    height: $b;
+}
+
+.boton {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+}
+
+$fuente-titulo: 'DM Serif Display', serif;
+$fuente-parrafo: 'Karla', sans-serif;
+
+@import "general";
+@import "nav";
+@import "header";
+@import "find-section";
+@import "different-section";
+@import "footer";

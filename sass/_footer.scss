@@ -1,0 +1,44 @@
+footer {
+    @include tamanio(100%, 60vh);
+    padding: 2rem 8rem;
+    @include flex(column, center, center);
+
+    #container-footer-top {
+        @include tamanio(100%, 30%);
+        @include flex(row, space-between, center);
+        border-bottom: 1px solid black;
+
+        #container-social-media {
+            gap: 1rem;
+            display: flex;
+        }
+    }
+
+    #container-footer-bottom {
+        @include tamanio(100%, 70%);
+        @include flex(row, space-between, center);
+
+        ul {
+            @include tamanio(100%/4, 100%);
+            @include flex(column, start, start);
+            gap: 1rem;
+            margin-top: 5rem;
+
+            h5 {
+                text-transform: uppercase;
+                margin-bottom: 2rem;
+                color: #0000007d;
+            }
+
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
