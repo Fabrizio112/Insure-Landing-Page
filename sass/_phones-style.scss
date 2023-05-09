@@ -2,9 +2,11 @@
 
     nav {
         flex-direction: column;
+        padding: 0;
 
         #navbar-left {
             width: 100%;
+            padding: 2rem;
             @include flex(row, space-between, center);
 
             #menu {
@@ -14,6 +16,29 @@
 
         #navbar-right {
             display: none;
+            width: 100%;
+            justify-content: center;
+            height: 150vh;
+
+            ul {
+                width: 100%;
+                justify-content: start;
+                flex-direction: column;
+                padding-top: 5rem;
+                background-color: #2b282f;
+
+                li>a,
+                #view {
+                    font-size: 3rem;
+                    color: white;
+                }
+
+                #view {
+                    border: 1px solid white;
+                    width: 90%;
+                    text-align: center;
+                }
+            }
         }
     }
 

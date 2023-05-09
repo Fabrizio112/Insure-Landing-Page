@@ -29,6 +29,9 @@ nav #navbar-left {
 nav #navbar-left #menu {
   display: none;
 }
+nav #navbar-left #cruz {
+  display: none;
+}
 nav #navbar-right {
   width: 50%;
   height: 100%;
@@ -321,9 +324,11 @@ footer #container-footer-bottom ul li a:active {
 @media screen and (max-width: 480px) {
   nav {
     flex-direction: column;
+    padding: 0;
   }
   nav #navbar-left {
     width: 100%;
+    padding: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -334,6 +339,26 @@ footer #container-footer-bottom ul li a:active {
   }
   nav #navbar-right {
     display: none;
+    width: 100%;
+    justify-content: center;
+    height: 150vh;
+  }
+  nav #navbar-right ul {
+    width: 100%;
+    justify-content: start;
+    flex-direction: column;
+    padding-top: 5rem;
+    background-color: #2b282f;
+  }
+  nav #navbar-right ul li > a,
+  nav #navbar-right ul #view {
+    font-size: 3rem;
+    color: white;
+  }
+  nav #navbar-right ul #view {
+    border: 1px solid white;
+    width: 90%;
+    text-align: center;
   }
   header {
     height: 280vh;
