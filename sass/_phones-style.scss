@@ -1,0 +1,166 @@
+@media screen and (max-width:480px) {
+
+    nav {
+        flex-direction: column;
+
+        #navbar-left {
+            width: 100%;
+            @include flex(row, space-between, center);
+
+            #menu {
+                display: block;
+            }
+        }
+
+        #navbar-right {
+            display: none;
+        }
+    }
+
+    header {
+        height: 280vh;
+
+        #header-container {
+            @include tamanio(100%, 100%);
+            flex-direction: column-reverse;
+            padding: 0;
+
+            #header-img {
+                @include tamanio(100%, 50%);
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    position: sticky;
+                    z-index: 1;
+                }
+
+                svg {
+                    transform: rotate(90deg);
+                    position: relative;
+                    top: 34rem;
+                    left: 32.5rem;
+                }
+            }
+
+            #header-text {
+                @include tamanio(100%, 50%);
+                @include flex(column, space-evenly, center);
+                text-align: center;
+
+                h1 {
+                    font-size: 7rem;
+                    width: 85%;
+                    line-height: 7rem;
+
+                    &::before {
+                        height: 0;
+                        width: 0;
+                    }
+                }
+
+                p {
+                    width: 90%;
+                    font-size: 2.7rem;
+                }
+
+                a {
+                    font-size: 3rem;
+                }
+            }
+        }
+
+        #image-left {
+            position: relative;
+            top: -64rem;
+            transform: rotate(45deg);
+        }
+    }
+
+    #different-section {
+        height: 280vh;
+        padding: 0;
+
+        h2 {
+            text-align: center;
+            font-size: 6rem;
+
+            &::before {
+                margin: 3rem auto;
+            }
+        }
+
+        #container-cajas {
+            flex-direction: column;
+
+            div {
+                @include tamanio(100%, 100%/3);
+                align-items: center;
+                text-align: center;
+                padding: 0 2rem;
+
+                h3 {
+                    font-size: 2rem;
+                    margin: 0;
+                }
+
+                p {
+                    font-size: 2.4rem;
+                }
+            }
+        }
+    }
+
+    #find-section {
+        height: 180vh;
+        @include flex(column, center, center);
+
+        #container-find {
+            @include tamanio(90%, 80%);
+
+            #content-find {
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                gap: 4rem;
+
+                h4 {
+                    font-size: 6rem;
+                }
+
+                a {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+
+    footer {
+        padding: 0;
+        height: 250vh;
+
+        #container-footer-top {
+            height: 15%;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        #container-footer-bottom {
+            height: 85%;
+            flex-direction: column;
+
+            ul {
+                @include tamanio(100%, 100%/4);
+                margin: 0;
+                justify-content: center;
+                align-items: center;
+
+                h5,
+                li {
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+}
